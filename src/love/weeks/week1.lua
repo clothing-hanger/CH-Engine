@@ -48,7 +48,7 @@ return {
 			fakeBoyfriend = love.filesystem.load("sprites/boyfriend.lua")() -- Used for game over
 			boyfriend = love.filesystem.load("sprites/simoc.lua")()
 		end
-
+		
 		girlfriend.x, girlfriend.y = 30, -90
 		enemy.x, enemy.y = -380, -110
 		boyfriend.x, boyfriend.y = 260, 100
@@ -97,25 +97,6 @@ return {
 			weeks:safeAnimate(girlfriend, "cheer", false, 1)
 		end
 		
-
-
---[[----------------------------------------------------------------------------
-HERE'S A TIP FOR PEOPLE WORKING ON MODS OR ANYTHING
-
-If you don't want BF to do the Hey! pose, just set the if song == to a number above the amount of songs your week has.
-For example, if your week has 5 songs, and you don't want BF to do the Hey! pose, just do this-
-
-			if song == 6 and musicThres ~= oldMusicThres and math.fmod(absMusicTime + 500, 480000 / bpm) < 100 then
-			weeks:safeAnimate(boyfriend, "hey", false, 3)
-			weeks:safeAnimate(girlfriend, "cheer", false, 1)
-		end
- See? It's set to 6, which is above the number of songs your week has, so BF will never do the Hey! pose
-				
-			:)
-
-------------------------------------------------------------------------------]]
-
-
 
 		if health >= 80 then
 			if enemyIcon:getAnimName() == "daddy dearest" then
