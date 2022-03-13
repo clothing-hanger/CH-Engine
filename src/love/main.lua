@@ -33,14 +33,17 @@ function love.load()
 	Gamestate = require "lib.gamestate"
 	Timer = require "lib.timer"
 
+
 	-- Load modules
 	status = require "modules.status"
 	audio = require "modules.audio"
 	graphics = require "modules.graphics"
-	input = require "modules.input"
 
 	-- Load settings
 	settings = require "settings"
+
+	-- this is a module but settings needs to be loaded first, dont move this
+	input = require "modules.input"
 
 	-- Load states
 	clickStart = require "states.click-start"

@@ -1176,6 +1176,34 @@ return {
 			countdown:draw()
 			graphics.setColor(1, 1, 1)
 		love.graphics.pop()
+
+		love.graphics.setColor(0, 0, 0)
+
+		--keystrokes
+
+		love.graphics.rectangle("line", 20, 95, 10, 10) -- up
+		love.graphics.rectangle("line", 20, 106, 10, 10) -- down
+		love.graphics.rectangle("line", 9, 106, 10, 10) -- left
+		love.graphics.rectangle("line", 31, 106, 10, 10) -- right
+
+
+		love.graphics.setColor(1, 1, 1)
+
+		if input:down("gameUp") then
+			love.graphics.rectangle("fill", 20, 95, 10, 10)
+		end
+
+		if input:down("gameDown") then
+			love.graphics.rectangle("fill", 20, 106, 10, 10)
+		end
+
+		if input:down("gameLeft") then
+			love.graphics.rectangle("fill", 9, 106, 10, 10)
+		end
+
+		if input:down("gameRight") then
+			love.graphics.rectangle("fill", 31, 106, 10, 10)
+		end
 	end,
 
 	leave = function(self)
