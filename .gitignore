@@ -23,3 +23,6 @@ tools/funkin-xna/*
 !tools/funkin-json-sniff/funkin-json-sniff.py
 !tools/funkin-xml/funkin-xml.py
 !tools/funkin-xna/funkin-xna.py
+
+# Clothing Hanger stuff
+*.lnk
