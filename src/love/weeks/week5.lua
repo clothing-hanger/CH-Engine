@@ -518,23 +518,42 @@ return {
 					love.graphics.print("Misses: " .. misses, -900, 100)
 					graphics.setColor(1, 1, 1)
 				end
-
 				
 
-
-			--	if settings.practiceMode then
-			--		if settings.downscroll then
-			--			love.graphics.print("PRACTICE MODE", -300, -350)
-			--		else
-			--			love.graphics.print("PRACTICE MODE", -300, 400)
-			--		end
-			--	end
+				
 
 
 				graphics.setColor(1, 1, 1, countdownFade[1])
 				countdown:draw()
 				graphics.setColor(1, 1, 1)
 			love.graphics.pop()
+	
+	
+	
+			--keystrokes
+			love.graphics.setColor(0, 0, 0)
+	
+			if input:down("gameUp") then
+				love.graphics.rectangle("fill", 100, 600, 30, 30)
+			end
+	
+			if input:down("gameDown") then
+				love.graphics.rectangle("fill", 100, 631, 30, 30)
+			end
+	
+			if input:down("gameRight") then
+				love.graphics.rectangle("fill", 131, 631, 30, 30)
+			end
+	
+			if input:down("gameLeft") then
+				love.graphics.rectangle("fill", 69, 631, 30, 30)
+			end
+	
+			love.graphics.rectangle("line", 100, 600, 30, 30) -- up
+			love.graphics.rectangle("line", 100, 631, 30, 30) -- down
+			love.graphics.rectangle("line", 131, 631, 30, 30) -- right
+			love.graphics.rectangle("line", 69, 631, 30, 30) -- left
+	
 		end
 	end,
 

@@ -17,6 +17,14 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 ------------------------------------------------------------------------------]]
 
+
+
+
+
+
+-- DONT TELL HTV OR GUGLIO ABOUT THIS BUT GO LOOK IN THE VERY BOTTOM OF MAIN.LUA
+--SCROLL ALL THE WAY DOWN :)
+
 local song, difficulty
 
 local stageBack, stageFront, curtains

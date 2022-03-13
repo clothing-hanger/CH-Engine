@@ -33,14 +33,17 @@ function love.load()
 	Gamestate = require "lib.gamestate"
 	Timer = require "lib.timer"
 
+
 	-- Load modules
 	status = require "modules.status"
 	audio = require "modules.audio"
 	graphics = require "modules.graphics"
-	input = require "modules.input"
 
 	-- Load settings
 	settings = require "settings"
+
+	-- this is a module but settings needs to be loaded first, dont move this
+	input = require "modules.input"
 
 	-- Load states
 	clickStart = require "states.click-start"
@@ -209,3 +212,25 @@ function love.draw()
 		love.graphics.print(status.getDebugStr(settings.showDebug), 5, 5, nil, 0.5, 0.5)
 	end
 end
+
+--Hello :)
+
+--Look at this
+
+-- its for week1.lua :)
+
+--[[----------------------------------------------------------------------------
+HERE'S A TIP FOR PEOPLE WORKING ON MODS OR ANYTHING
+
+If you don't want BF to do the Hey! pose, just set the if song == to a number above the amount of songs your week has.
+For example, if your week has 5 songs, and you don't want BF to do the Hey! pose, just do this-
+
+			if song == 6 and musicThres ~= oldMusicThres and math.fmod(absMusicTime + 500, 480000 / bpm) < 100 then
+			weeks:safeAnimate(boyfriend, "hey", false, 3)
+			weeks:safeAnimate(girlfriend, "cheer", false, 1)
+		end
+ See? It's set to 6, which is above the number of songs your week has, so BF will never do the Hey! pose
+				
+			:)
+
+------------------------------------------------------------------------------]]
