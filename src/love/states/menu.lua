@@ -285,11 +285,11 @@ local function switchMenu(menu)
 end
 
 logoBumpin.x, logoBumpin.y = -350, -125
-simocLogo.x, simocLogo.y = -350, -125
+simocLogo.x, simocLogo.y = logoBumpin.x, logoBumpin.y
 simocLogo.sizeX, simocLogo.sizeY = 0.6, 0.6
 
 girlfriendTitle.x, girlfriendTitle.y = 300, -75
-simocTitle.x, simocTitle.y = 300, -75
+simocTitle.x, simocTitle.y = girlfriendTitle.x, girlfriendTitle.y
 
 music:setLooping(true)
 
