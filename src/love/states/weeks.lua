@@ -1082,12 +1082,37 @@ return {
 			end
 
 			--the judgment counter
+			if sicks == 0 then
+				sicksStr = "Counter"
+			else
+				sicksStr = sicks
+			end
+			if goods == 0 then
+				goodsStr = "Counter"
+			else
+				goodsStr = goods
+			end
+			if bads == 0 then
+				badsStr = "Counter"
+			else
+				badsStr = bads
+			end
+			if shits == 0 then
+				shitsStr = "Counter"
+			else
+				shitsStr = shits
+			end
+			if misses == 0 then
+				missesStr = "Counter"
+			else
+				missesStr = misses
+			end
 			love.graphics.printf(
-				"Sicks: " .. sicks ..
-				"\n\nGoods: " .. goods ..
-				"\n\nBads: " .. bads ..
-				"\n\nShits: " .. shits ..
-				"\n\nMisses: " .. misses,
+				"Sicks: " .. sicksStr ..
+				"\n\nGoods: " .. goodsStr ..
+				"\n\nBads: " .. badsStr ..
+				"\n\nShits: " .. shitsStr ..
+				"\n\nMisses: " .. missesStr,
 				-900,
 				0, 
 				750,
