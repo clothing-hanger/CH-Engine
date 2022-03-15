@@ -1089,89 +1089,44 @@ return {
 				end
 			end
 		end
-		if spirit then
-			if sicks == 0 then -- this colors the text white since black text would be very hard to read in Spirits stage
-				love.graphics.print("Sicks", -120, -30)
-			else 
-				love.graphics.print(sicks, -120, -30)
-			end
-			
-			if goods == 0 then
-				love.graphics.print("Goods", -120, -20)
-			else
-				love.graphics.print(goods, -120, -20)
-			end
-			
-			if bads == 0 then
-				love.graphics.print("Bads", -120, -10)
-			else
-				love.graphics.print(bads, -120, -10)
-			end
-			
-			if shits == 0 then
-				love.graphics.print("Shits", -120, 0)
-			else
-				love.graphics.print(shits, -120, 0)
-			end
-						
-			if misses == 0 then
-				love.graphics.print("Misses", -120, 10)
-			else
-				love.graphics.print(misses, -120, 10)
-			end
-		else -- this colors the text white for senpais stage
-			if sicks == 0 then
-				love.graphics.setColor(0, 0, 0)
-				love.graphics.print("Sicks", -120, -30)
-				love.graphics.setColor(1, 1, 1)
-			else 
-				love.graphics.setColor(0, 0, 0)
-				love.graphics.print(sicks, -120, -30)
-				love.graphics.setColor(1, 1, 1)
-			end
-			
-			if goods == 0 then
-				love.graphics.setColor(0, 0, 0)
-				love.graphics.print("Goods", -120, -20)
-				love.graphics.setColor(1, 1, 1)
-			else
-				love.graphics.setColor(0, 0, 0)
-				love.graphics.print(goods, -120, -20)
-				love.graphics.setColor(1, 1, 1)
-			end
-			
-			if bads == 0 then
-				love.graphics.setColor(0, 0, 0)
-				love.graphics.print("Bads", -120, -10)
-				love.graphics.setColor(1, 1, 1)
-			else
-				love.graphics.setColor(0, 0, 0)
-				love.graphics.print(bads, -120, -10)
-				love.graphics.setColor(1, 1, 1)
-			end
-			
-			if shits == 0 then
-				love.graphics.setColor(0, 0, 0)
-				love.graphics.print("Shits", -120, 0)
-				love.graphics.setColor(1, 1, 1)
-			else
-				love.graphics.setColor(0, 0, 0)
-				love.graphics.print(shits, -120, 0)
-				love.graphics.setColor(1, 1, 1)
-			end
-						
-			if misses == 0 then
-				love.graphics.setColor(0, 0, 0)
-				love.graphics.print("Misses", -120, 10)
-				love.graphics.setColor(1, 1, 1)
-			else
-				love.graphics.setColor(0, 0, 0)
-				love.graphics.print(misses, -120, 10)
-				love.graphics.setColor(1, 1, 1)
-			end
+		if sicks == 0 then
+			sicksStr = "Sicks"
+		else
+			sicksStr = sicks
+		end
+		if goods == 0 then
+			goodsStr = "Goods"
+		else
+			goodsStr = goods
+		end
+		if bads == 0 then
+			badsStr = "Bads"
+		else
+			badsStr = bads
+		end
+		if shits == 0 then
+			shitsStr = "Shits"
+		else
+			shitsStr = shits
+		end
+		if misses == 0 then
+			missesStr = "Misses"
+		else
+			missesStr = misses
 		end
 
-
+		love.graphics.printf(
+			sicksStr ..
+			"\n\n" .. goodsStr ..
+			"\n\n" .. badsStr ..
+			"\n\n" .. shitsStr ..
+			"\n\n" .. missesStr,
+			-120,
+			-30, 
+			750,
+			"left"
+		)
+		
 			graphics.setColor(1, 1, 1, countdownFade[1])
 			countdown:draw()
 			graphics.setColor(1, 1, 1)
