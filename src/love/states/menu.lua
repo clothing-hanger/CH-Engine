@@ -360,7 +360,7 @@ return {
 
 				if not simoc then
 					love.graphics.printf(
-						"CH Engine v1.1.2\n" ..
+						"CH Engine v1.2.2\n" ..
 						"CH Engine by Clothing Hanger\n\n" ..
 						"FNFR Developed by HTV04\n\n" ..
 						"Original game by Funkin' Crew, in association with Newgrounds",
