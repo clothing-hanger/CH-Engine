@@ -51,6 +51,7 @@ function love.load()
 	menu = require "states.menu"
 	weeks = require "states.weeks"
 	weeksPixel = require "states.weeks-pixel"
+	menuCredits = require "states.menu-credits"
 
 	-- Load substates
 	gameOver = require "substates.game-over"

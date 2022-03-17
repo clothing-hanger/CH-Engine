@@ -37,7 +37,7 @@ local logoBumpin = love.filesystem.load("sprites/menu/logoBumpin.lua")()
 local menuNames = {
 	"Story Mode",
 	"Freeplay",
-	"Credits (NOT YET THOUGH SORRY ILL ADD THESE ONE DAY I PROMISE)"
+	"Credits"
 }
 
 local weekMeta = {
@@ -109,9 +109,7 @@ local music = love.audio.newSource("music/menu/menu.ogg", "stream")
 
 local function switchMenu(menu)
 	if menu == 4 then
-		love.window.showMessageBox("lol", "Not implemented yet :P")
-
-		return switchMenu(1)
+		Gamestate.switch(menuCredits)
 	elseif menu == 3 then
 		function leftFunc()
 			if menuState == 3 then
@@ -360,7 +358,7 @@ return {
 
 				if not simoc then
 					love.graphics.printf(
-						"CH Engine v1.1.2\n" ..
+						"CH Engine v1.2.1\n" ..
 						"CH Engine by Clothing Hanger\n\n" ..
 						"FNFR Developed by HTV04\n\n" ..
 						"Original game by Funkin' Crew, in association with Newgrounds",
