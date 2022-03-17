@@ -1082,35 +1082,42 @@ return {
 			end
 
 			--the judgment counter
-			if sicks == 0 then 
-				love.graphics.print("Sicks Counter", -900, -200)
-			else 
-				love.graphics.print("Sicks: " .. sicks, -900, -200)
+			if sicks == 0 then
+				sicksStr = "Counter"
+			else
+				sicksStr = sicks
 			end
-
 			if goods == 0 then
-				love.graphics.print("Goods Counter", -900, -125)
+				goodsStr = "Counter"
 			else
-				love.graphics.print("Goods: " .. goods, -900, -125)
+				goodsStr = goods
 			end
-
 			if bads == 0 then
-				love.graphics.print("Bads Counter", -900, -50)
+				badsStr = "Counter"
 			else
-				love.graphics.print("Bads: " .. bads, -900, -50)
+				badsStr = bads
 			end
-
 			if shits == 0 then
-				love.graphics.print("Shits Counter", -900, 25)
+				shitsStr = "Counter"
 			else
-				love.graphics.print("Shits: " .. shits, -900, 25)
+				shitsStr = shits
 			end
-			
 			if misses == 0 then
-				love.graphics.print("Misses Counter", -900, 100)
+				missesStr = "Counter"
 			else
-				love.graphics.print("Misses: " .. misses, -900, 100)
+				missesStr = misses
 			end
+			love.graphics.printf(
+				"Sicks: " .. sicksStr ..
+				"\n\nGoods: " .. goodsStr ..
+				"\n\nBads: " .. badsStr ..
+				"\n\nShits: " .. shitsStr ..
+				"\n\nMisses: " .. missesStr,
+				-900,
+				0, 
+				750,
+				"left"
+			)
 
 			graphics.setColor(1, 1, 1, countdownFade[1])
 			countdown:draw()
