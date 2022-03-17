@@ -1,5 +1,5 @@
 # ![Logo](images/logo.png)
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/HTV04/funkin-rewritten?style=flat-square)](https://github.com/HTV04/funkin-rewritten/releases/latest) [![GitHub release (latest SemVer including pre-releases)](https://img.shields.io/github/v/release/HTV04/funkin-rewritten?include_prereleases&style=flat-square)](https://github.com/HTV04/funkin-rewritten/releases) [![GitHub all releases](https://img.shields.io/github/downloads/HTV04/funkin-rewritten/total?style=flat-square)](https://github.com/HTV04/funkin-rewritten/releases) [![GitHub issues](https://img.shields.io/github/issues/HTV04/funkin-rewritten?style=flat-square)](https://github.com/HTV04/funkin-rewritten/issues) [![GitHub](https://img.shields.io/github/license/HTV04/funkin-rewritten?style=flat-square)](https://github.com/HTV04/funkin-rewritten/blob/main/LICENSE) [![Discord](https://img.shields.io/discord/852658576577003550?style=flat-square)](https://discord.gg/tQGzN2Wu48)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/HTV04/funkin-rewritten?style=flat-square)](https://github.com/clothing-hanger/CH-Engine/releases/latest) [![GitHub release (latest SemVer including pre-releases)](https://img.shields.io/github/v/release/clothing-hanger/CH-Engine?include_prereleases&style=flat-square)](https://github.com/clothing-hanger/CH-Engine/releases) [![GitHub all releases](https://img.shields.io/github/downloads/clothing-hanger/CH-Engine/total?style=flat-square)](https://github.com/clothing-hanger/CH-Engine/releases) [![GitHub issues](https://img.shields.io/github/issues/clothing-hanger/CH-Engine?style=flat-square)](https://github.com/clothing-hanger/CH-Engine/issues) [![GitHub](https://img.shields.io/github/license/HTV04/funkin-rewritten?style=flat-square)](https://github.com/HTV04/funkin-rewritten/blob/main/LICENSE) [![Discord](https://img.shields.io/discord/852658576577003550?style=flat-square)](https://discord.gg/tQGzN2Wu48)
 
 Friday Night Funkin' Rewritten is a rewrite of [Friday Night Funkin'](https://ninja-muffin24.itch.io/funkin) built on [LÖVE](https://love2d.org/) and [LÖVE Potion](https://github.com/lovebrew/LovePotion) for Windows, macOS, Linux, and Web platforms, as well as previously unsupported platforms, like the Nintendo Switch!
 
@@ -9,6 +9,17 @@ Friday Night Funkin' Rewritten features:
 * Controller support
 * Other cool features, like downscroll
 * And more to come!
+
+CH Engine features:
+* Redesigned judgment and numbers sprites
+* Judgment Counter
+* New game modes: Sudden Death and Practice Mode
+* Improved input windows
+* DFJK support
+* Keystrokes viewer
+* Custom health gain and drain
+* Health bar colors
+
 
 Join the Discord server for updates: https://discord.gg/tQGzN2Wu48
 
@@ -60,13 +71,12 @@ The settings file can be found in the following places on the following systems:
 **Game Engine** - 90% Complete
 * Engine is in close parity with the original game's Week 6 update.
 * No pause menu yet.
-* No "3-2-1-Go!" intro yet.
 
 **Weeks** - ~6/8 Complete
 * Tutorial + Weeks 1-5 are implemented.
 * Week 3's train is not implemented yet.
 * Week 4's passing car is not implemented yet.
-* Weeks 6-7 are not implemented yet.
+* Weeks 7 is not implemented yet
 
 # License
 *Friday Night Funkin' Rewritten* is licensed under the terms of the GNU General Public License v3, with the exception of most of the images, music, and sounds, which are proprietary. While FNF Rewritten's code is FOSS, use its assets at your own risk.
